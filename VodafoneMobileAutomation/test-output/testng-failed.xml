@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite thread-count="4" configfailurepolicy="continue" guice-stage="DEVELOPMENT" name="Failed suite [VodafoneTest]">
+  <parameter name="platform" value="Perfecto_Android"/>
+  <test name="VodafoneTest(failed)">
+    <classes>
+      <class name="com.sxm.mobile.android.tests.VodafoneTest">
+        <methods>
+          <include name="initializeDrivers"/>
+          <include name="closeApp"/>
+          <include name="validateLastRecharge"/>
+          <include name="loginToApp"/>
+        </methods>
+      </class> <!-- com.sxm.mobile.android.tests.VodafoneTest -->
+    </classes>
+  </test> <!-- VodafoneTest(failed) -->
+</suite> <!-- Failed suite [VodafoneTest] -->

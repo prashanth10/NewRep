@@ -1,0 +1,16 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="VodafoneTest" configfailurepolicy="continue"
+	thread-count="4" verbose="1">
+	<parameter name="platform" value="Perfecto_Android" />
+	<!-- for ios that platform value should be ios -->
+	<test name="VodafoneTest" preserve-order="false" parallel="false">
+		<classes>
+			<class name="com.vodafone.mobile.android.tests.VodafoneTest">
+				<methods>
+				<include name="validateLastRecharge"></include>
+				</methods>
+			</class>
+		</classes>
+	</test>
+</suite>
+
